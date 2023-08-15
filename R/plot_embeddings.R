@@ -23,12 +23,13 @@ plot_embeddings <- function(qc_obj, var_type=c('discrete', 'continuous'),
     } else {
         annot_vars  = metadata(qc_obj)$annots$cont
     }
+    plot_list <- list()
     for (v in annot_vars) {
         cat('### ', v, '\n')
         g = .plot_one_embedding(qc_obj, v, var_type, sel_embed)
-        print(g)
-        cat('\n\n')
+        plot_list[[v]] <- g
     }
+    return(plot_list)
 }
 
 #' Plots non-linear embeddings of MMD distances calculated by 
