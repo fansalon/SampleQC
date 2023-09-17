@@ -100,14 +100,14 @@ These plots show the same $\alpha_j$ values, but as biaxials, and equivalently f
 ## $\alpha_j$ PCA values{.tabset}
 
 ```{r plot_alpha_j_pca, fig.height=4, fig.width=10, results='asis'}
-for (g in group_list) {
-    cat('### ', g, ' feats\n')
-    print(plot_alpha_js(qc_obj, g, qc_idx=1:2, pc_idx=1:2))
-    cat('\n\n')
-    cat('### ', g, ' mito\n')
-    print(plot_alpha_js(qc_obj, g, qc_idx=c(1,3), pc_idx=c(1,3)))
-    cat('\n\n')
-}
+##for (g in group_list) {
+##    cat('### ', g, ' feats\n')
+##    print(plot_alpha_js(qc_obj, g, qc_idx=1:2, pc_idx=1:2))
+##    cat('\n\n')
+##    cat('### ', g, ' mito\n')
+##    print(plot_alpha_js(qc_obj, g, qc_idx=c(1,3), pc_idx=c(1,3)))
+##    cat('\n\n')
+##}
 ```
 
 These plots show the composition of each sample in terms of the $K$ different mixture components, plus outliers.
@@ -116,9 +116,9 @@ These plots show the composition of each sample in terms of the $K$ different mi
 
 ```{r plot_beta_k, fig.height=10, fig.width=6, results='asis'}
 # plot likelihoods
-for (g in group_list) {
-    cat('### ', g, '\n')
-    print(plot_beta_ks(qc_obj, g))
-    cat('\n\n')
-}
+##for (g in group_list) {
+##    cat('### ', g, '\n')
+##    print(plot_beta_ks(qc_obj, g))
+##    cat('\n\n')
+##}
 ```
