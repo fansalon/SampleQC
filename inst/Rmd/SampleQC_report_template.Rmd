@@ -88,11 +88,11 @@ Values of $\alpha_j$ which are extreme relative to those for most other samples 
 
 ```{r plot_alpha_j_likes, fig.height=9, fig.width=8, results='asis'}
 # plot likelihoods
-for (g in group_list) {
-    cat('### ', g, '\n')
-    print(plot_alpha_js_likelihoods(qc_obj, g))
-    cat('\n\n')
-}
+##for (g in group_list) {
+##    cat('### ', g, '\n')
+##    print(plot_alpha_js_likelihoods(qc_obj, g))
+##    cat('\n\n')
+##}
 ```
 
 These plots show the same $\alpha_j$ values, but as biaxials, and equivalently for PCA projections.
